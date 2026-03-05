@@ -1,0 +1,56 @@
+# Ignore all files by default
+*
+
+# Don't ignore .gitignore itself
+!.gitignore
+
+# Don't ignore readme.MD
+!readme.MD
+
+# Don't ignore screenshot files referenced in readme
+!Screenshot*.png
+
+# Don't ignore 3d_reconstruction_videos folder structure
+!3d_reconstruction_videos/
+!3d_reconstruction_videos/scene2_frames/
+
+# Point clouds and video to keep
+!3d_reconstruction_videos/scene2.mp4
+!3d_reconstruction_videos/scene2_pointcloud.glb
+!3d_reconstruction_videos/scene2_pointcloud_final.glb
+
+# Input frames
+!3d_reconstruction_videos/scene2_frames/*.jpg
+
+# Scripts
+!3d_reconstruction_videos/*.py
+!3d_reconstruction_videos/*.sh
+!3d_reconstruction_videos/*.html
+
+# Explicitly ignore the large folders
+colmap/
+lingbot-world/
+lingbot-world-nf4/
+vipe/
+
+# Ignore git clone folders inside 3d_reconstruction_videos
+3d_reconstruction_videos/vggt/
+3d_reconstruction_videos/Depth-Anything-3/
+3d_reconstruction_videos/VGGT-1B-Commercial/
+3d_reconstruction_videos/pannellum/
+3d_reconstruction_videos/pano_crops/
+3d_reconstruction_videos/scene2_output*/
+3d_reconstruction_videos/scene2_frames/.git/
+
+# Ignore checkpoints and models
+3d_reconstruction_videos/*.onnx
+3d_reconstruction_videos/*.bin
+
+# Ignore other large generated files
+3d_reconstruction_videos/*_clean_*.glb
+3d_reconstruction_videos/*_nosky*.glb
+3d_reconstruction_videos/*_overlap.glb
+3d_reconstruction_videos/pano_pointcloud.glb
+3d_reconstruction_videos/scene2_pointcloud_vggt*.glb
+3d_reconstruction_videos/output.jpg
+3d_reconstruction_videos/references.md
