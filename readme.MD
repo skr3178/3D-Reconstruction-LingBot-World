@@ -1,4 +1,6 @@
-# Here are the point cloud generated on the image setup. 
+# Reconstruct the detailed 3D models from the generated world sequences. Drag to rotate, scroll to zoom.
+
+## Here are the point cloud generated on the image setup. 
 
 The original is from the lingbot world model reconstruction while the generated is using the vggt based package for the generation. 
 
